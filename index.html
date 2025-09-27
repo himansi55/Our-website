@@ -105,6 +105,75 @@ padding-top: 0;
 .ftr{
   height:300px;
 }
+
+@media (max-width: 768px) {
+  .service-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .list-br {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ftr {
+    min-height: auto;
+  }
+
+  .inner {
+    height: auto;
+  }
+
+  .out-sec .row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .out-sec .inner {
+    flex: 1;
+  }
+
+  /* Common fix for spacing between stacked cards */
+  .row > [class*='col-'] {
+    margin-bottom: 20px;
+  }
+
+  /* Button layout in hero section */
+  .service-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Service list stack vertically */
+  .list-br {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Fixing box height in get in touch section */
+  .ftr {
+    height: auto !important;
+  }
+
+  .inner {
+    height: auto !important;
+  }
+
+  /* Uniform row layout (How it works, Our Team, Get in Touch) */
+  .out-sec .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .out-sec .inner {
+    width: 100%;
+  }
+}
+
+
     </style>
   </head>
   <body>
@@ -262,13 +331,13 @@ padding-top: 0;
             role="tabpanel"
           >
             <div class="row g-4">
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5 class="geo-text">Aerial Triangulation</h5>
                   <p>Multiple aerial images align karna for accurate 3D coordinate generation and mapping.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>DTM / DEM</h5>
                   <p>
@@ -276,61 +345,61 @@ padding-top: 0;
                   </p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Planimetric Mapping</h5>
                   <p>Mapping horizontal features like roads, buildings, ignoring elevation or terrain details.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Topographic Mapping</h5>
                   <p>Detailed mapping showing terrain contours, elevations, natural and man-made features.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Ortho Image Processing</h5>
                   <p>Geometrically correcting aerial photos for uniform scale, distortion-free map-ready images.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>LiDAR / Mobile LiDAR Mapping</h5>
                   <p>Laser scanning for precise 3D surface data from static or mobile platforms.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Utility Mapping</h5>
                   <p>Locating and mapping underground utilities like pipes, cables for infrastructure management.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Cadastral Mapping</h5>
                   <p>Mapping land ownership boundaries, property divisions for legal and administrative use.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Land use / Land Cover</h5>
                   <p>Classifying surface features by their use (urban, agriculture) and natural cover.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>GIS / CADD Data Development</h5>
                   <p>Creating spatial databases and CAD drawings integrating geographic and design data.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>GIS Application Development</h5>
                   <p>Building customized software tools for spatial data analysis and visualization.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>GIS Analysis</h5>
                   <p>Analyzing geographic data patterns to support decision-making and planning processes.</p>
@@ -342,49 +411,49 @@ padding-top: 0;
           <!-- Data Analytics Services -->
           <div class="tab-pane fade" id="data-analytics" role="tabpanel">
             <div class="row g-4">
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Data Collection & Cleaning</h5>
                   <p>Ensuring reliable and accurate datasets.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Data Visualization</h5>
                   <p>Interactive dashboards using Power BI, Tableau, Excel.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Business Intelligence Reporting</h5>
                   <p>Actionable insights through BI tools.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Statistical & Predictive Analysis</h5>
                   <p>Data models for forecasting and trends.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Machine Learning Models</h5>
                   <p>Basic ML solutions for pattern recognition.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>Data Warehousing & ETL</h5>
                   <p>Efficient data storage and transformation solutions.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>SQL Database Management</h5>
                   <p>Database design, optimization, and queries.</p>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-4">
                 <div class="card p-3 h-100">
                   <h5>KPI & Performance Analytics</h5>
                   <p>Measure and improve business performance.</p>
@@ -402,7 +471,8 @@ padding-top: 0;
   <div class="container text-center  out-sec">
     <h2>How It Works</h2>
 
-    <div class="row mt-4">
+    <div class="row mt-4 g-4">
+
       <div class="col-md-3 "><div class="p-2 shadow rounded-lg  inner-1">
         <i class="bi bi-search fs-1 text-primary"></i>
         <h5 class="mt-4">Research</h5>
@@ -424,7 +494,7 @@ padding-top: 0;
     <h2>Our Team</h2>
     <div class="row mt-4">
 
-      <div class="col-md-4">
+      <div class="col-12 col-md-4">
         <div class="p-4 shadow rounded-lg bg-white  inner">
           <i class="bi bi-person-circle fs-1 text-primary"></i>
           <h5 class="mt-3">Geospatial Expert</h5>
@@ -493,9 +563,10 @@ padding-top: 0;
 <section class="py-5 bg-gray-100" id="team">
   <div class="container text-center out-sec">
     <h2 id="contact">Get in Touch</h2>
-    <div class="row mt-4">
+    <div class="row mt-4 g-4">
 
-      <div class="col-md-4  ">
+
+      <div class="col-md-4  inner">
         <div class="p-4 shadow rounded-lg bg-white  inner ftr">
           
           <h5 class="mt-3" style="text-align: left; margin-bottom: 10px;"><b>About Us:</b></h5>
