@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INZACH SOLUTIONS - Geospatial & Data Analytics</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        scroll-behavior: smooth;
+      }
+      .hero {
+        background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d")
+          no-repeat center center/cover;
+        color: white;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+      }
+      .tab-content .card {
+        transition: transform 0.3s;
+      }
+      .tab-content .card:hover {
+        transform: translateY(-5px);
+      }
+      footer {
+        background: #222;
+        color: #bbb;
+        padding: 20px 0;
+        text-align: center;
+      }
+      footer a {
+        color: #bbb;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: #fff;
+      }
+
+      div a img {
+        border-radius: 6px;
+        margin-right: 10px;
+      }
+
+      .nav-link {
+        color: rgb(216, 216, 216);
+        font-size: 18px;
+      }
+
+      
+
+    
+.inner{
+  border-radius: 10px;
+}
+    .inner-1{
+  border-radius: 10px;
+height: 190px;
+padding-top: 0;
+}
+
+
+
+.container {
+  max-width: 1500px;
+}
+
+.geo-text{
+  text-transform: capitalize;
+}
+
+.list-br{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+
+}
+
+.ftr{
+  height:300px;
+}
+    </style>
+  </head>
+  <body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a href="">
+          <img src="./logo.jpg" alt="" width="40" />
+        </a>
+        <a class="navbar-brand fw-bold" href="#">INZACH SOLUTIONS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+           
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#works">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Our Team</a>
+            </li>
+            
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#geospatial"
+                    >Geospatial & GIS</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#data-analytics"
+                    >Data Analytics</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero d-flex">
+      <div class="container hero-content">
+        <h1 class="display-4 fw-bold">
+          Innovating with Geospatial Intelligence & Data Analytics
+        </h1>
+        <p class="lead">
+          Empowering smarter decisions through mapping, technology, and data
+          insights.
+        </p>
+        <!-- <div class="mt-4">
+          <a href="#geospatial" class="btn btn-success btn-lg m-2"
+            style="padding: 16px 18px;" >📍Explore Geospatial Solutions</a
+          >
+          <a href="#data-analytics" class="btn btn-lg m-2"
+           style="color: white; border:1px solid white; padding: 15px 18px;" >📊  Explore Data Analytics</a
+          >
+        </div> -->
+
+        <div class="service-buttons">
+      <a href="#services" class="btn btn-success btn-lg" style="margin-right: 15px;">📍 Geospatial Services</a>
+      <a href="#services" class="btn btn-outline-light btn-lg">📊 Data Analytics Services</a>
+    </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">About Us</h2>
+          <p class="text-muted">
+            Delivering Excellence in Geospatial and Data Analytics Solutions
+          </p>
+        </div>
+        <p style="text-align: center;">
+          INZACH SOLUTIONS empowers businesses with
+          <b>end-to-end geospatial and data-driven insights</b>. Our mission is
+          to deliver high-quality GIS mapping, remote sensing, and data
+          analytics solutions that support smarter decisions across industries
+          like infrastructure, utilities, urban planning, and business
+          intelligence.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Tabs -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold" id="services">Our Services</h2>
+          <p class="text-muted">
+            Choose a category to explore our specialized solutions
+          </p>
+        </div>
+
+        <ul  
+          class="nav nav-tabs justify-content-center"
+          id="serviceTabs"
+          role="tablist"
+          
+        >
+          <li class="nav-item" >
+            <button
+              class="nav-link active"
+              id="geo-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#geospatial"
+              type="button"
+            >
+              Geospatial & GIS
+            </button>
+          </li>
+          <li class="nav-item" id="dataaa" >
+            <button  
+              class="nav-link"
+              id="data-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#data-analytics"
+              type="button"
+              
+            >
+              Data Analytics
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content mt-4">
+          <!-- Geospatial Services -->
+          <div
+            class="tab-pane fade show active"
+            id="geospatial"
+            role="tabpanel"
+          >
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5 class="geo-text">Aerial Triangulation</h5>
+                  <p>Multiple aerial images align karna for accurate 3D coordinate generation and mapping.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>DTM / DEM</h5>
+                  <p>
+                   Digital Terrain Model / Digital Elevation Model represent surface elevations in digital form.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Planimetric Mapping</h5>
+                  <p>Mapping horizontal features like roads, buildings, ignoring elevation or terrain details.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Topographic Mapping</h5>
+                  <p>Detailed mapping showing terrain contours, elevations, natural and man-made features.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Ortho Image Processing</h5>
+                  <p>Geometrically correcting aerial photos for uniform scale, distortion-free map-ready images.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>LiDAR / Mobile LiDAR Mapping</h5>
+                  <p>Laser scanning for precise 3D surface data from static or mobile platforms.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Utility Mapping</h5>
+                  <p>Locating and mapping underground utilities like pipes, cables for infrastructure management.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Cadastral Mapping</h5>
+                  <p>Mapping land ownership boundaries, property divisions for legal and administrative use.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Land use / Land Cover</h5>
+                  <p>Classifying surface features by their use (urban, agriculture) and natural cover.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>GIS / CADD Data Development</h5>
+                  <p>Creating spatial databases and CAD drawings integrating geographic and design data.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>GIS Application Development</h5>
+                  <p>Building customized software tools for spatial data analysis and visualization.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>GIS Analysis</h5>
+                  <p>Analyzing geographic data patterns to support decision-making and planning processes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Analytics Services -->
+          <div class="tab-pane fade" id="data-analytics" role="tabpanel">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Data Collection & Cleaning</h5>
+                  <p>Ensuring reliable and accurate datasets.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Data Visualization</h5>
+                  <p>Interactive dashboards using Power BI, Tableau, Excel.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Business Intelligence Reporting</h5>
+                  <p>Actionable insights through BI tools.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Statistical & Predictive Analysis</h5>
+                  <p>Data models for forecasting and trends.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Machine Learning Models</h5>
+                  <p>Basic ML solutions for pattern recognition.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>Data Warehousing & ETL</h5>
+                  <p>Efficient data storage and transformation solutions.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>SQL Database Management</h5>
+                  <p>Database design, optimization, and queries.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-3 h-100">
+                  <h5>KPI & Performance Analytics</h5>
+                  <p>Measure and improve business performance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- How It Works -->
+<section class="py-5 bg-white" id="works">
+  <div class="container text-center  out-sec">
+    <h2>How It Works</h2>
+    <div class="row mt-4">
+      <div class="col-md-3"><div class="p-4 shadow rounded-lg  inner-1"><i class="bi bi-search fs-1 text-primary"></i><h5 class="mt-3">Research</h5><p>Understanding client needs & objectives.</p></div></div>
+      <div class="col-md-3"><div class="p-4 shadow rounded-lg  inner-1"><i class="bi bi-gear fs-1 text-success"></i><h5 class="mt-3">Process</h5><p>Applying GIS & data workflows efficiently.</p></div></div>
+      <div class="col-md-3"><div class="p-4 shadow rounded-lg  inner-1"><i class="bi bi-bar-chart fs-1 text-warning"></i><h5 class="mt-3">Analysis</h5><p>Turning data into actionable insights.</p></div></div>
+      <div class="col-md-3"><div class="p-4 shadow rounded-lg  inner-1"><i class="bi bi-check2-circle fs-1 text-danger"></i><h5 class="mt-3">Delivery</h5><p>Providing high-quality reports & solutions.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+ <section style="background-color: #f3f2f25b;">
+<section class="py-5 bg-gray-100" id="team">
+  <div class="container text-center out-sec">
+    <h2>Our Team</h2>
+    <div class="row mt-4">
+
+      <div class="col-md-4">
+        <div class="p-4 shadow rounded-lg bg-white  inner">
+          <i class="bi bi-person-circle fs-1 text-primary"></i>
+          <h5 class="mt-3">Geospatial Expert</h5>
+          <p>Specialist in GIS Mapping & Remote Sensing.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 inner" ><div class="p-4 shadow rounded-lg bg-white   inner"><i class="bi bi-person-circle fs-1 text-success"></i><h5 class="mt-3">Data Analyst</h5><p>Expert in BI, Visualization, and Predictive Analysis.</p></div></div>
+      <div class="col-md-4 inner" ><div class="p-4 shadow rounded-lg bg-white   inner"><i class="bi bi-person-circle fs-1 text-warning"></i><h5 class="mt-3">Project Manager</h5><p>Ensures timely delivery and client satisfaction.</p></div></div>
+    </div>
+  </div>
+</section>
+</section>
+
+
+    <!-- Contact -->
+    <!-- <section id="contact" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold" id="contact">Contact Us</h2>
+          <p class="text-muted">Get in touch with our team</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Head Office</h5>
+            <p>Noida, Uttar Pradesh, India</p>
+            <p><i class="bi bi-telephone"></i> +91 9876543210</p>
+            <p><i class="bi bi-envelope"></i> info@inzachsolutions.com</p>
+          </div>
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="mb-3">
+                <select class="form-control">
+                  <option>Select Service</option>
+                  <option>Geospatial & GIS</option>
+                  <option>Data Analytics</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+<section style="background-color: #d0e0e05b;">
+<section class="py-5 bg-gray-100" id="team">
+  <div class="container text-center out-sec">
+    <h2 id="contact">Get in Touch</h2>
+    <div class="row mt-4">
+
+      <div class="col-md-4  ">
+        <div class="p-4 shadow rounded-lg bg-white  inner ftr">
+          
+          <h5 class="mt-3" style="text-align: left; margin-bottom: 10px;"><b>About Us:</b></h5>
+          <p style="text-align: left; text-align: justify; "> INZACH Solutions an Indian IT based company providing solution to Geospatial and Engineering sector. We are providing services in Mapping Solution (Digital Photogrammetry, LiDAR, Mobile LiDAR, ORTHO, GIS, and CAD etc.). Our Services are Quality assured, Timely Executed with an affordable competitive pricing.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4   inner " style="text-align:left; margin-bottom: 10px;">
+        <div class="p-4 shadow rounded-lg bg-white   inner ftr">
+          <h5 class="mt-3"><b>Our Services:</b></h5>
+        <ul class="list-br">
+          <div>
+          <li>Digital photogrammetry</li>
+          <li>LiDAR</li>
+          <li>Mobile LiDAR</li>
+          <li>Ortho Image Processing</li>
+          <li>GIS</li>
+          <li>CAD</li>
+          <li>Geological Data
+</li>
+</div>
+<div>
+          <li>Agriculture</li>
+          <li>Water Resources
+</li>
+          <li>Urban & Rural Sectors
+</li>
+          <li>Disaster Management
+</li>
+          <li>Developmental Planning
+</li>
+          <li>Natural Resources
+</li>
+          <li>Telecom
+</li>
+         </div>
+
+        </ul>
+
+
+      </div>
+
+    </div>
+
+      <div class="col-md-4   inner" style="text-align: left;">
+        <div class="p-4 shadow rounded-lg bg-white   inner 
+
+ftr">
+          <h5 class="mt-3"><b>Contact Us:</b></h5>
+          <p class="mb-1"><b>INZACH SOLUTIONS PVT LTD.</b></p>
+          <p class="mb-1"><b>Address: </b>Brola, Sector - 49, Noida, Uttar Pradesh, India, Pin Code- 201301.</p>
+          <p class="mb-1"><b>Email: </b>inzachsolutions@gmail.com</p>
+          <p class="mb-1"><b>Linkedin: </b><a href="https://www.linkedin.com/in/inzach-solutions-243a06347/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Join here</a></p>
+          <p><b>Phone: </b>+91-7895184496, +91-9027485758.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</section>
+ 
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 INZACH SOLUTIONS. All Rights Reserved.</p>
+        <p>
+          <a href="#about">About</a> | <a href="#services">Services</a> |
+          <a href="#contact">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
