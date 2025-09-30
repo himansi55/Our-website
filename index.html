@@ -173,7 +173,9 @@ padding-top: 0;
   }
 }
 
-
+.clr:hover{
+  color: yellow;
+}
     </style>
   </head>
   <body>
@@ -199,19 +201,19 @@ padding-top: 0;
            
            
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link clr" href="#">Home</a>
             </li>
              <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link  clr" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link  clr" href="#services">Services</a>
             </li>
              <li class="nav-item">
-              <a class="nav-link" href="#works">How it works</a>
+              <a class="nav-link  clr" href="#works">How it works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#team">Our Team</a>
+              <a class="nav-link  clr" href="#team">Our Team</a>
             </li>
             
               <ul class="dropdown-menu">
@@ -228,7 +230,7 @@ padding-top: 0;
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link  clr" href="#contact">Contact</a>
             </li>
           </ul>
 
@@ -493,17 +495,49 @@ padding-top: 0;
   <div class="container text-center out-sec">
     <h2>Our Team</h2>
     <div class="row mt-4">
+      <!-- add names -->
+       <!-- <div class="col-12 col-md-4">
+        <div class="p-4 shadow rounded-lg bg-white  inner">         
+          <h4 class="mt-3">Er. Inzamam Ul Haque</h4>
+           <h5>Petroleum Engineer</h5> 
+           <p>(IITian)</p>
+            <p>Co-founder & CEO</p>          
+        </div>
+      </div> -->
 
+
+
+
+<!-- old -->
+
+
+<div class="col-12 col-md-2"></div>
       <div class="col-12 col-md-4">
         <div class="p-4 shadow rounded-lg bg-white  inner">
           <i class="bi bi-person-circle fs-1 text-primary"></i>
-          <h5 class="mt-3">Geospatial Expert</h5>
-          <p>Specialist in GIS Mapping & Remote Sensing.</p>
+          <h3 class="mt-1" style="padding: 0;">Er. Inzamam Ul Haque</h3>
+          <h5>Petroleum Engineer</h5>
+          <h5 class="mb-4">(IITian)</h5>
+          <p style="color: rgb(154, 160, 190); font-size:20px"><b>Co-founder & CEO</b></p>
         </div>
       </div>
 
-      <div class="col-md-4 inner" ><div class="p-4 shadow rounded-lg bg-white   inner"><i class="bi bi-person-circle fs-1 text-success"></i><h5 class="mt-3">Data Analyst</h5><p>Expert in BI, Visualization, and Predictive Analysis.</p></div></div>
-      <div class="col-md-4 inner" ><div class="p-4 shadow rounded-lg bg-white   inner"><i class="bi bi-person-circle fs-1 text-warning"></i><h5 class="mt-3">Project Manager</h5><p>Ensures timely delivery and client satisfaction.</p></div></div>
+      <div class="col-12 col-md-4">
+        <div class="p-4 shadow rounded-lg bg-white  inner">
+          <i class="bi bi-person-circle fs-1 text-success"></i>
+          <h3 class="mt-1">Er. Achal Kumar</h3>
+         <h5>GIS Engineer</h5> 
+          <h5 class="mb-4">(IITian)</h5>
+          <p  style="color:rgb(154, 160, 190); font-size:20px"><b>Co-founder & COO</b></p>
+        </div>
+      </div>
+<div class="col-12 col-md-2"></div>
+
+      <!-- <div class="col-md-4 inner" ><div class="p-4 shadow rounded-lg bg-white   inner"><i class="bi bi-person-circle fs-1 text-success"></i><h5 class="mt-3">Data Analyst</h5><p>Expert in BI, Visualization, and Predictive Analysis.</p></div></div>
+
+
+      <div class="col-md-4 inner" ><div class="p-4 shadow rounded-lg bg-white   inner"><i class="bi bi-person-circle fs-1 text-warning"></i><h5 class="mt-3">Project Manager</h5><p>Ensures timely delivery and client satisfaction.</p></div></div> -->
+
     </div>
   </div>
 </section>
@@ -559,14 +593,15 @@ padding-top: 0;
         </div>
       </div>
     </section> -->
-<section style="background-color: #d0e0e05b;">
+
+    <section style="background-color: #d0e0e05b;">
 <section class="py-5 bg-gray-100" id="team">
   <div class="container text-center out-sec">
     <h2 id="contact">Get in Touch</h2>
     <div class="row mt-4 g-4">
 
 
-      <div class="col-md-4  inner">
+      <div class="col-md-4  inner" style="line-height: 1.8;">
         <div class="p-4 shadow rounded-lg bg-white  inner ftr">
           
           <h5 class="mt-3" style="text-align: left; margin-bottom: 10px;"><b>About Us:</b></h5>
@@ -611,7 +646,7 @@ padding-top: 0;
 
     </div>
 
-      <div class="col-md-4   inner" style="text-align: left;">
+      <div class="col-md-4   inner" style="text-align: left; line-height: 2;">
         <div class="p-4 shadow rounded-lg bg-white   inner 
 
 ftr">
@@ -620,7 +655,7 @@ ftr">
           <p class="mb-1"><b>Address: </b>Brola, Sector - 49, Noida, Uttar Pradesh, India, Pin Code- 201301.</p>
           <p class="mb-1"><b>Email: </b>inzachsolutions@gmail.com</p>
           <p class="mb-1"><b>Linkedin: </b><a href="https://www.linkedin.com/in/inzach-solutions-243a06347/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Join here</a></p>
-          <p><b>Phone: </b>+91-7895184496, +91-9027485758.</p>
+          <p><b>Phone: </b>+91-9027485758, +91-7895184496.</p>
         </div>
       </div>
 
